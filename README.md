@@ -4,7 +4,7 @@ Names of links were shortened and made more appropriate (home screen changed fro
 The only change added to the code was the immediate redirect to the canvas after making an account for QOL.
 
 # how to use
-Start here: fyrebolt.github.io/mosaic/index.html
+Start here: https://fyrebolt.github.io/mosaic/index.html
 Make and account and join the canvas. Use keyboard keys (0-9) to pick a color. 
 
 # what the code is about
