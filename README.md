@@ -13,7 +13,7 @@ The canvas uses Wick Editor to get the frame-by-frame inputs from every user, an
 The activity recognition uses firebase accounts, and all user information is pushed to a database.
 
 # resources used:
-Languages: javascript, html, css  
+Languages: javascript, html, css <br>
 Platforms: wick editor, firebase, websocket, repl.it, github
 
 This is my first major project published under time pressure with completely original code and a original idea with a group of acquaintances.
