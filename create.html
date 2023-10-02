@@ -113,7 +113,17 @@
             firebase.auth().createUserWithEmailAndPassword(email, password)
               .then((userCredential) => {
                 var user = userCredential.user;
-                window.alert("Creation success!")
+                window.alert("Creation success! Redirecting you to canvas!");
+
+                var user2 = firebase.auth().currentUser;
+                var email = user2.email;
+                    
+                var index = email.indexOf("@");
+                var name = email.substring(0,index);
+            
+                sessionStorage.setItem("name", name);
+            
+                window.location.href = 'canvas.html';
               })
               .catch((error) => {
                 var errorCode = error.code;
@@ -127,8 +137,8 @@
     </script>
     
         <body style="background-color:rgb(231, 188, 146); font-family: 'Nanum Pen Script';">
-        <button onclick = "window.location.href='loginInterface.html'" class="button button1" style="font-size:200%;font-family:Nanum Pen Script"><b>&larr;</b></button>
-        <img src= "https://fyrebolt.github.io/test/-mosaiclogo.png"
+        <button onclick = "window.location.href='index.html'" class="button button1" style="font-size:200%;font-family:Nanum Pen Script"><b>&larr;</b></button>
+        <img src= "-mosaiclogo.png"
         alt="logo" width="50%" height="50%" class = "center">
 
         <h1>Welcome to -MOSAIC</h1>
